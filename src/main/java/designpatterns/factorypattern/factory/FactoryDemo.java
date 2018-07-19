@@ -1,6 +1,7 @@
 package designpatterns.factorypattern.factory;
 
-import com.thinkpavan.patterns.pojo.Shape;
+
+import designpatterns.factorypattern.pojo.Shape;
 
 public class FactoryDemo {
     public static void main(String[] args) {

@@ -1,10 +1,12 @@
 package cucumber;
 
+import javax.swing.*;
+
 public class User {
     private String name;
     private String certification;
     private int marks;
-
+    
     public String getName() {
         return name;
     }

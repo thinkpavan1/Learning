@@ -1,6 +1,7 @@
 package mockito.mockito.doc;
 
-import com.learning.calculator.CalculatorService;
+
+import mockito.calculator.CalculatorService;
 import org.mockito.Mock;
 
 public class MockAnnotationTest {
