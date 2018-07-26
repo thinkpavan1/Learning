@@ -4,8 +4,8 @@ import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Iterables;
+import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import java.util.Collection;
@@ -79,4 +79,5 @@ public class FilterTest {
         result = Iterables.all(names, Predicates.containsPattern ( "a" ));
         assertFalse(result);
     }
+
 }

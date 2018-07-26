@@ -19,17 +19,18 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 public class TransformTest {
+    static Function<String, Integer> TO_LENGTH_OF_STRING = new Function<String, Integer> ( ) {
+        @Override
+        public Integer apply(String input) {
+            return input.length ( );
+        }
+    };
+
     @Test
     public void whenTransformedWithIterables_thenTransformed() {
         // transform to length of strings
         List<String> names = Lists.newArrayList ( "John", "Jane", "Adam", "Tom" );
 
-        Function<String, Integer> TO_LENGTH_OF_STRING = new Function<String, Integer> ( ) {
-            @Override
-            public Integer apply(String input) {
-                return input.length ( );
-            }
-        };
 
         Iterable<Integer> stringLength = Iterables.transform ( names, TO_LENGTH_OF_STRING );
         assertThat ( stringLength, contains ( 4, 4, 4, 3 ) );
