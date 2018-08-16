@@ -13,4 +13,6 @@ public class StringUtilities {
         String retValue = joiner.join ( STRING_ARRAY );
         Assert.assertEquals ( "Harry;Ron;Hermione", retValue);
     }
+
+
 }
