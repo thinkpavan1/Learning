@@ -1,4 +1,4 @@
-package java8features.streams.match;
+package java8features.streams;
 
 import java.util.List;
 import java.util.function.Predicate;
