@@ -1,6 +1,5 @@
 package cucumber;
 
-import javax.swing.*;
 
 public class User {
     private String name;
